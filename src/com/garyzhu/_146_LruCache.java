@@ -5,9 +5,9 @@ import java.util.Map;
 
 /**
  * Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and set.
-
- get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
- set(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item.
+ * <p/>
+ * get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
+ * set(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item.
  */
 // 1. 用一个双向链表来存储数据，用map来索引
 // 2. 链表越靠前表示越近访问，如果size超过capacity，就淘汰链表尾节点
@@ -32,7 +32,7 @@ public class _146_LruCache {
     private int capacity;
 
     public _146_LruCache(int capacity) {
-        cacheIndex = new HashMap<Integer, Node>();
+        cacheIndex = new HashMap<>();
         this.capacity = capacity;
         head.next = tail;
         tail.prev = head;
