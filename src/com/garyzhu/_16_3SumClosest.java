@@ -6,9 +6,12 @@ package com.garyzhu;
  * For example, given array S = {-1 2 1 -4}, and target = 1.
  * <p>
  * The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
+ * -4, -1, 1, 2
  */
 public class _16_3SumClosest {
     public int threeSumClosest(int[] nums, int target) {
+        int i, j, k;
 
+        return 0;
     }
 }
