@@ -9,6 +9,7 @@ package com.garyzhu;
  * L1, L2, L3
  * Uk+1:
  */
+ // 动态规划
 public class _264_UglyNumber2 {
     public int nthUglyNumber(int n) {
         if (n <= 0) {
